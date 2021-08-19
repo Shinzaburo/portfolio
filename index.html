@@ -17,20 +17,22 @@
         <li><a href="/">Blog</a></li>
         <li><a href="/">お問い合わせ</a></li>
       </nav>
-        <img class="headimg" src="本を読む人2.jpg" alt="header">
+      <br>
+      <span id="typewriter"></span>
+      <img class="headimg" src="本を読む人2.jpg" alt="header">
     </header>
 
     <main>
-        <h1 class="top-text">Welcome to my page!!</h1>
-
-        <section class="about">
+        <section class="about card">
             <h2 class="title-text">― About me ―</h2>
             <div>
                 <img src="y-3.jpg" alt="y-3">
             <p>
               熊本県出身、22歳の大学院生。工学部に入学し機械工学について学ぶ。
-              「人々の生活を豊かにするサービスをつくりたい！」という思いでWeb系エンジニアを目指す。
-              まだまだ駆け出しエンジニアだが、日々勉強中！！
+              「人々の生活を豊かにするサービスをつくりたい！」<br>
+              という思いでWeb系エンジニアを目指す。<br>
+              まだまだ駆け出しエンジニアだが、日々勉強中！！<br>
+              いろんなコンテンツをみて自分の事をもっと知っていただけたら嬉しいです！
               <br>
               <br>
               Github → <a class="github" target="_blank" href="https://github.com/Shinzaburo">github.com/Shinzaburo</a>
@@ -38,7 +40,7 @@
             </div>
         </section>
 
-        <section class="sns">
+        <section class="card sns">
             <h2 class="title-text">― SNS ―</h2>
             <div>
                 <ul>
@@ -105,5 +107,23 @@
         <small>© 2021 Shinzaburo Watanabe</small>
     </footer>
 
+    <script>
+        const typewriter = (param) => {
+
+        let el = document.querySelector(param.el);
+        let speed = param.speed;
+        let string = param.string.split("");
+        string.forEach((char, index) => {
+            setTimeout(() => {
+                el.textContent += char;
+            }, speed * index);
+        });
+        };
+        typewriter({
+        el: "#typewriter", //要素
+        string: "Welcome to my page!!", //文字列
+        speed: 70 //速度
+        });
+    </script>
 </body>
 </html>

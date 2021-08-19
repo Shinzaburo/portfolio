@@ -36,14 +36,25 @@ nav ul {
     display: block;
     width: 100%;
     height: auto;
+    background-size: cover;
     margin:0px auto;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
 
-.top-text {
+/* .top-text {
     display: block;
-    width: 340px;
+    width: 25%;
     font-family: "Comic Sans MS";
     margin: 5% auto;
+} */
+
+#typewriter {
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 5% auto;
+    font-family: "Comic Sans MS";
 }
 
 .title-text {
@@ -57,7 +68,8 @@ section {
 }
 
 .about {
-    background-image: url(splash_blue.jpg);
+    /* background-image: url(splash_blue.jpg); */
+    background-color: rgba(255, 255, 255, 0.8);
     background-size: cover;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
     padding-top: 1%;
@@ -97,8 +109,9 @@ section {
 }
 
 .sns {
-    background-image: url(splash_green.jpg);
+    /* background-image: url(splash_green.jpg); */
     background-size: cover;
+    background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
     display: flex;
     flex-flow: column wrap;
@@ -124,8 +137,9 @@ section {
 }
 
 .blog {
-    background-image: url(splash_yellow.jpg);
+    /* background-image: url(splash_yellow.jpg); */
     background-size: cover;
+    background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
 }
