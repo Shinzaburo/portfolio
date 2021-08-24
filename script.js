@@ -14,3 +14,15 @@ const typewriter = (param) => {
     string: "Welcome to my page!!", //文字列
     speed: 100 //速度
     });
+
+    let scrollElem = document.querySelectorAll('.animate');
+let scrollAnimation = function() {
+  for(let i = 0; i < scrollElem.length; i++) {
+    let trigger = 50;
+    if (window.innerHeight > scrollElem[i].getBoundingClientRect().top + trigger) {
+      scrollElem[i].classList.add('is-show');
+    }
+  }
+}
+window.addEventListener('load', scrollAnimation);
+window.addEventListener('scroll', scrollAnimation);

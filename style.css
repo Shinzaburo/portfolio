@@ -7,7 +7,7 @@ html {
 }
 
 .inner {
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
     background-image: url(./images/white2.jpg);
 }
@@ -25,6 +25,8 @@ nav ul {
     position: fixed;
     z-index: 2;
     right: 0;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    border-radius: 1vw;
 }
 
 .navigation li a {
@@ -36,6 +38,7 @@ nav ul {
 
 .navigation li a:hover {
     font-size: 1.2rem;
+    color: rgb(243, 182, 70);
 }
 
 .top {
@@ -83,9 +86,9 @@ section {
 }
 
 .about img {
-    width: 20vw;
-    height: auto;
-    margin: 5% 2%;
+    width: 25vw;
+    height: 30vw;
+    margin: 5% 5%;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
 
@@ -112,17 +115,23 @@ section {
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
 }
 
+.sns ul {
+    width: 33.3333%;
+    width: calc(100%/3);
+    padding-inline-start: unset;
+    padding: 0 3%;
+}
+
 .sns div {
     display: inline-block;
     display: flex;
     justify-content: space-around;
-    margin: 0 3%;
+    margin: 0 5%;
 }
 
 .sns div ul li {
     display: flex;
     justify-content: center;
-    margin: 0 2%;
 }
 
 .sns div ul li a {
@@ -130,6 +139,17 @@ section {
     justify-content: center;
     text-decoration: none;
     color: rgb(112, 101, 101);
+}
+
+.snsimg {
+    width: 4vw;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+
+.logo {
+    font-size: 4vw;
 }
 
 .blog {
@@ -143,17 +163,6 @@ section {
     padding-top: 1%;
 }
 
-.snsimg {
-    width: 8%;
-    height: auto;
-    border-radius: 10%;
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
-}
-
-.logo {
-    font-size: 3vw;
-}
-
 .blog img {
     width: 20%;
     height: auto;
@@ -162,7 +171,7 @@ section {
 }
 
 .blogtext {
-    margin:0 30%;
+    margin:0 20%;
 }
 
 .blog_recommend ul {
@@ -172,14 +181,47 @@ section {
 }
 
 .blog_recommend img {
-    width: 15rem;
+    width: 15vw;
     height: auto;
 }
 
 .blog_recommend ul li {
     display: inline-block;
+    width: 33.333%;
     margin: 0 2%;
 }
+
+.animate {
+    visibility: hidden;
+  }
+  
+  .animate.is-show {
+    animation: show 1s both;
+    visibility: visible;
+  }
+  
+  .animate2.is-show {
+    animation-delay: .2s;
+  }
+  
+  .animate3.is-show {
+    animation-delay: .4s;
+  }
+
+  .animate4.is-show {
+    animation-delay: .6s;
+  }
+  
+  @keyframes show {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 footer p {
     font-size: 2rem;
