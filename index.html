@@ -6,52 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body class="inner">
-    <header>
+    <header id=header>
       <nav>
         <ul class="navigation">
-        <li><a href="/">Top</a></li>
-        <li><a href="/">About</a></li>
-        <li><a href="/">SNS</a></li>
-        <li><a href="/">Blog</a></li>
-        <li><a href="/">お問い合わせ</a></li>
+        <li><a href="#header">Top</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#sns">SNS</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a target="_blank" href="https://zabunoblog.com/%e3%81%8a%e5%95%8f%e3%81%84%e5%90%88%e3%82%8f%e3%81%9b%e3%83%95%e3%82%a9%e3%83%bc%e3%83%a0/">お問い合わせ</a></li>
       </nav>
-      <br>
-      <span id="typewriter"></span>
-      <img class="headimg" src="本を読む人2.jpg" alt="header">
+      <div class="top">
+        <img src="images/star2.jpg"/>
+        <span id="typewriter"></span>	
+      </div>
     </header>
 
     <main>
         <section class="about card">
-            <h2 class="title-text">― About me ―</h2>
+            <div id=about><h2 class="title-text">― About me ―</h2></div>
             <div>
-                <img src="y-3.jpg" alt="y-3">
-            <p>
-              熊本県出身、22歳の大学院生。工学部に入学し機械工学について学ぶ。
-              「人々の生活を豊かにするサービスをつくりたい！」<br>
-              という思いでWeb系エンジニアを目指す。<br>
-              まだまだ駆け出しエンジニアだが、日々勉強中！！<br>
-              いろんなコンテンツをみて自分の事をもっと知っていただけたら嬉しいです！
-              <br>
-              <br>
-              Github → <a class="github" target="_blank" href="https://github.com/Shinzaburo">github.com/Shinzaburo</a>
-            </p>
+                <img src="./images/y-3.jpg" alt="y-3">
+                <p>
+                熊本県出身、22歳の大学院生。工学部に入学し機械工学について学ぶ。
+                「人々の生活を豊かにするサービスをつくりたい！」<br>
+                という思いでWeb系エンジニアを目指す。<br>
+                まだまだ駆け出しエンジニアだが、日々勉強中！！<br>
+                いろんなコンテンツをみて自分の事をもっと知っていただけたら嬉しいです！
+                <br>
+                <br>
+                <a class="github" target="_blank" href="https://github.com/Shinzaburo">Github → github.com/Shinzaburo</a>
+                </p>
             </div>
         </section>
 
         <section class="card sns">
-            <h2 class="title-text">― SNS ―</h2>
+            <div id=sns><h2 class="title-text">― SNS ―</h2></div>
             <div>
                 <ul>
-                    <li><a target="_blank" href="https://twitter.com/zabunoblog_QOL"><img class="snsimg" src="Twitterlogo-blue.png" alt="Twitter"></a></li>
+                    <li><a target="_blank" href="https://twitter.com/zabunoblog_QOL"><i class="fab fa-twitter logo"></i></a></li>
                     <li><a target="_blank" href="https://twitter.com/zabunoblog_QOL">Twitter</a></li>
                     <li><p>
                         何気ない思ったことなどをつぶやいてます。プログラミングの勉強をしていて思ったことや、
                         その日やったこと、日々の成果などを報告しています！
                     </p></li>
                 </ul>
-                <ul><li><a target="_blank" href="https://www.instagram.com/shinstar.gram/"><img class="snsimg" src="Instagram_Glyph_Gradient_RGB.png" alt="Instagram"></a></li>
+                <ul><li><a target="_blank" href="https://www.instagram.com/shinstar.gram/"><i class="fab fa-instagram logo"></i></a></li>
                     <li><a target="_blank" href="https://www.instagram.com/shinstar.gram/">Instagram</a></li>
                     <li><p>
                         友人との日頃の思い出や、旅行の日記などを投稿しています。
@@ -59,7 +61,7 @@
                     </p></li>
                 </ul>
                 
-                <ul><li><a target="_blank" href="https://www.tiktok.com/@zabunoblog?lang=ja-JP"><img class="snsimg" src="tiktok-logo.svg" alt="TikTok"></a></li>
+                <ul><li><a target="_blank" href="https://www.tiktok.com/@zabunoblog?lang=ja-JP"><img class="snsimg" src="./images/tiktok-logo.svg" alt="TikTok"></a></li>
                     <li><a target="_blank" href="https://www.tiktok.com/@zabunoblog?lang=ja-JP">TikTok</a></li>
                     <li><p>
                         最近はまっているゲーム「APEX LEGENDS」というゲームのクリップを投稿しています。
@@ -71,28 +73,24 @@
         </section>
 
         <section class="blog">
-            <h2 class="title-text">― Blog ―</h2>
+            <div id=blog><h2 class="title-text">― Blog ―</h2></div>
             <div>
-            <!-- <img src="pc1.jpeg" alt="Blog"> -->
             <p class="blogtext">
               QOLを上げる方法や、美容などに関する情報を発信しています！
               プログラミングの学習やこれから挑戦したいことなどをまとめて発信していく予定なので、
               見ていただけると嬉しいです！！
               <br>
               <br>
-              <a class="blogsite" target="_blank" href="https://zabunoblog.com/">→ブログはこちらから←<br><br>↓オススメ記事↓</a>
-              <br>
-              <br>
               
               <div class="blog_recommend">
                   <ul>
-                      <li><a target="_blank" href="https://zabunoblog.com/2021/06/07/%e3%80%90%e7%94%b7%e5%ad%90%e5%bf%85%e8%a6%8b%ef%bc%81%e3%80%91%e6%b4%97%e9%a1%94%e6%96%99%e3%82%92%e5%a4%89%e3%81%88%e3%82%8b%e5%89%8d%e3%81%ab%e8%a6%8b%e3%81%a6%e3%81%bb%e3%81%97%e3%81%84%ef%bc%81/"><img src="BULK HOMME2.jpeg" alt="BULK"></a>
+                      <li><a target="_blank" href="https://zabunoblog.com/2021/06/07/%e3%80%90%e7%94%b7%e5%ad%90%e5%bf%85%e8%a6%8b%ef%bc%81%e3%80%91%e6%b4%97%e9%a1%94%e6%96%99%e3%82%92%e5%a4%89%e3%81%88%e3%82%8b%e5%89%8d%e3%81%ab%e8%a6%8b%e3%81%a6%e3%81%bb%e3%81%97%e3%81%84%ef%bc%81/"><img src="./images/BULK HOMME2.jpeg" alt="BULK"></a>
                         <p>BULKHOMME洗顔ネット</p>
                       </li>
-                      <li><a target="_blank" href="https://zabunoblog.com/2021/06/05/cicapair-cream1/"><img src="CICAPAIR cream3.jpeg" alt="CICAPAIR"></a>
+                      <li><a target="_blank" href="https://zabunoblog.com/2021/06/05/cicapair-cream1/"><img src="./images/CICAPAIR cream3.jpeg" alt="CICAPAIR"></a>
                         <p>CICAPAIRクリーム</p>
                     </li>
-                      <li><a target="_blank" href="https://zabunoblog.com/2021/06/08/present1/"><img src="プレゼント.jpg" alt="present"></a>
+                      <li><a target="_blank" href="https://zabunoblog.com/2021/06/08/present1/"><img src="./images/プレゼント.jpg" alt="present"></a>
                         <p>おすすプレゼント</p>
                     </li>
                   </ul>
@@ -107,23 +105,7 @@
         <small>© 2021 Shinzaburo Watanabe</small>
     </footer>
 
-    <script>
-        const typewriter = (param) => {
+    <script type="text/javascript" src="script.js"></script>
 
-        let el = document.querySelector(param.el);
-        let speed = param.speed;
-        let string = param.string.split("");
-        string.forEach((char, index) => {
-            setTimeout(() => {
-                el.textContent += char;
-            }, speed * index);
-        });
-        };
-        typewriter({
-        el: "#typewriter", //要素
-        string: "Welcome to my page!!", //文字列
-        speed: 70 //速度
-        });
-    </script>
 </body>
 </html>

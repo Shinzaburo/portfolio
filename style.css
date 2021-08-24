@@ -2,10 +2,14 @@ ul {
     list-style: none;
 }
 
+html {
+     scroll-behavior: smooth;
+}
+
 .inner {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
-    background-image: url(white2.jpg);
+    background-image: url(./images/white2.jpg);
 }
 
 header {
@@ -15,64 +19,61 @@ header {
 
 nav ul {
     display: flex;
-    justify-content: flex-end;
-    background-color: rgba(240, 255, 255, 0.507);
-    padding: 10px 0;
+    background-color: rgba(74, 185, 185, 0.55);
+    padding: 1% 0;
+    margin: 0 auto;
     position: fixed;
+    z-index: 2;
+    right: 0;
 }
 
 .navigation li a {
     text-decoration: none;
     font-size: 1rem;
-    color: rgb(59, 52, 52);
+    color: rgb(43, 38, 38);
     margin:0 50px 0 30px;
 }
 
 .navigation li a:hover {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
-.headimg {
-    display: block;
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    margin:0px auto;
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
-}
-
-/* .top-text {
-    display: block;
-    width: 25%;
-    font-family: "Comic Sans MS";
-    margin: 5% auto;
-} */
-
-#typewriter {
+.top {
+    position: relative;/*相対配置*/
+    z-index: 1;
+    }
+  
+  .top span {
+    position: absolute;/*絶対配置*/
+    color: white;/*文字は白に*/
+    font-weight: bold; /*太字に*/
     font-size: 5vw;
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: 5% auto;
-    font-family: "Comic Sans MS";
-}
+    font-family :"Comic Sans MS";
+    top: 30%;
+    left: 25%;
+    }
+  
+  .top img {
+    width: 100vw;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    }
 
 .title-text {
     display: flex;
     justify-content: center;
     font-family: "Comic Sans MS";
+    /* padding-top: 1%; */
 }
 
 section {
-    margin: 100px 0;
+    margin: 3% 0;
 }
 
 .about {
-    /* background-image: url(splash_blue.jpg); */
     background-color: rgba(255, 255, 255, 0.8);
     background-size: cover;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
-    padding-top: 1%;
+    
 }
 
 .about div {
@@ -81,15 +82,9 @@ section {
     justify-content: center;
 }
 
-.about h2 {
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-}
-
 .about img {
-    max-width: 20%;
-    max-height: auto;
+    width: 20vw;
+    height: auto;
     margin: 5% 2%;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
@@ -109,7 +104,6 @@ section {
 }
 
 .sns {
-    /* background-image: url(splash_green.jpg); */
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
@@ -132,30 +126,32 @@ section {
 }
 
 .sns div ul li a {
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     color: rgb(112, 101, 101);
 }
 
 .blog {
-    /* background-image: url(splash_yellow.jpg); */
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
     font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
 }
 
-/* .blog div {
-    display: flex;
-    justify-content: center;
-} */
-
-
+.blog h2 {
+    padding-top: 1%;
+}
 
 .snsimg {
-    width: 50px;
-    height: 50px;
+    width: 8%;
+    height: auto;
     border-radius: 10%;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+}
+
+.logo {
+    font-size: 3vw;
 }
 
 .blog img {
@@ -183,12 +179,6 @@ section {
 .blog_recommend ul li {
     display: inline-block;
     margin: 0 2%;
-}
-
-.blogsite {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
 }
 
 footer p {
